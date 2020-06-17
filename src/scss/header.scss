@@ -1,0 +1,93 @@
+
+@import 'variables'; 
+
+header {
+    width: 100%;
+    height: 100px;
+    padding: 40px 10px 40px 150px ;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    h3 {
+        position: relative;
+        font-size: 36px;
+        a {
+            text-decoration: none;
+            color: $clr-pr;
+            &::before {
+                content: '';
+                background: rgb(245, 243, 243);
+                height: 70px;
+                width: 70px;
+                position: absolute;
+                border-radius: 50%;
+                z-index: -1;
+                transform: translateX(34px);
+            }
+        }
+    }
+
+    .nav-items-center {
+        width: 550px;
+        height: 100%;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 100px;
+        li {
+            list-style: none;
+            a {
+                color: $clr-pr;
+                text-decoration: none;
+                padding: 6px 10px;
+                white-space: nowrap;
+                transition: .4s  ;
+                &:hover {
+                    background: $clr-sc ;
+                    border-radius: 30px;
+                    border: 1px dashed $clr-pr;
+                }
+            }
+        }
+    }
+
+    .nav-items-side {
+        width: 230px;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: $clr-pr;
+
+                select {
+                    border: none;
+                    outline: none;
+                    background: none;
+                }
+                
+            }
+            
+            &:nth-child(2) a {
+                width: 150px;
+                padding: 6px 25px;
+                white-space: nowrap;
+                background: $clr-pr;
+                color: $clr-sc;
+                border-radius: 10px;
+                font-size: 13px;
+                // margin: 0 10px;
+            }
+
+
+        }
+    }
+
+}

@@ -1,0 +1,88 @@
+@import 'variables'; 
+
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: $clr-sc;
+    // z-index: -10;
+
+    .hero {
+        width: 100%;
+        height: 700px;
+        background: url(../assets/bg-01.jpg)  ;
+        background-repeat: no-repeat;
+        background-size: contain;
+        padding: 250px 150px;
+        position: relative;
+        display: flex;
+        // justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        
+        p {
+
+            color: $clr-pr;
+            font-size: 40px;
+            z-index: 10;
+            margin-bottom: 40px;
+        }
+
+        button {
+            background: none;
+            outline: none;
+            border: none;
+            color: $clr-pr;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            img {
+                margin-left: 40px;
+                width: 24px;
+                transition: .2s;
+                border-radius: 50%;
+
+                &:hover {
+                    background: white;
+                    padding: 2px;
+                }                
+
+            }
+
+            
+        }
+    }
+
+    .foot {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 70px;
+        padding: 0 150px;
+
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+                color: $clr-pr;
+                font-size: 18px;
+
+                &:last-child {
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
