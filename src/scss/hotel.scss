@@ -1,0 +1,99 @@
+.tab-2 {
+    position: relative;
+    background: white;
+    height: 83%;
+    box-shadow: 0 5px 5px 5px rgba($color: #000000, $alpha: .2);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 0 40px 0 40px;
+    background: white;
+    select{
+        margin-right: 64px;
+        border: none !important;
+        background: none !important;
+        outline: none !important;
+    }
+    .information {
+        width: 100%;
+        position: relative;
+        padding: 20px 0 ;
+        display: flex;
+        align-items: flex-start;
+        .hotel-info {
+            width: 350px;
+            height: 140px;
+            padding: 15px 30px;
+            border: 1px solid rgba($color: #000000, $alpha: 1.0);
+            margin-right: 20px;
+            border-radius: 50px;
+
+            h3 {
+                font-size: 29px;
+            }
+            a {
+                text-decoration: none;
+                font-size: 20px;
+                color: rgba($color: #000000, $alpha: .4);
+            }
+        }
+
+        .hotel-carossel {
+            width: 350px;
+            height: 140px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            border: 1px solid rgba($color: #000000, $alpha: 1.0);
+            margin-right: 20px;
+            border-radius: 50px;
+            position: relative;
+            overflow: hidden;
+            img{
+                width: 16px;
+                cursor: pointer;
+                &:nth-child(1) {
+                    width: 80%;
+                    height: 140px;
+                    object-fit: cover;
+                    border-radius: 50px 0 0 50px;
+                    margin-right: 20px;
+                    
+                }
+            }
+        }
+
+        .card-date {
+            padding: 15px 30px;
+            border-radius: 50px;
+            border: 1px solid rgba($color: #000000, $alpha: 1.0);
+            width: 300px;
+            height: 140px;
+            margin-right: 20px;
+
+            span {
+                font-size: 14px;
+                display:block;
+                margin-bottom: 20px;
+                transform: translateX(10px);
+
+            }
+
+            .datepick {
+                // border: 1px solid rgba($color: #000000, $alpha: 1.0);
+                border: none;
+                border-radius: 20px;
+                background: rgba($color: #000000, $alpha: .4);
+                font-size: 12px;
+                width: 150px;
+                height: 40px;
+                padding: 10px;
+            }
+
+            img {
+                transform: translate(10px , 10px);
+            }
+        }
+
+    }
+
+}
