@@ -1,7 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component , useEffect } from 'react';
+import {Link} from 'react-router-dom'
 import '../scss/landing.scss';
 import next from '../assets/arrow.png'; 
-export class Landing extends Component {
+export class Landing extends Component {    
+   
     render() {
         return (
             <div className="wrapper">

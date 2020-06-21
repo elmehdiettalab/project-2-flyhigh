@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../scss/header.scss'; 
-
+import {Link} from 'react-router-dom'
+import Login from './Login'; 
 export class Header extends Component {
     render() {
         return (
@@ -14,8 +15,14 @@ export class Header extends Component {
                 </ul>
 
                 <ul className="nav-items-side">
-                    <li><a href="#">Register</a></li>
-                    <li><a href="#">Sign In</a></li>
+                    {/* <li><a href="#">Register</a></li> */}
+                    <li>
+                       <Link to="/register">Register</Link>
+                    </li>
+                    <li>
+                       <Link to="/login">Sign In</Link>
+                    </li>
+                    {/* <li><a href="#">Sign In</a></li> */}
                     <li><a href="#">
                         <select id="lang" name="languages">
                             <option value="EN">En</option>
