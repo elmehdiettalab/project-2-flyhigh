@@ -23,7 +23,7 @@ const Register = () => {
                 params={{
                     particles: {
                         number: {
-                            value: 300,
+                            value: 600,
                             density: {
                                 enable: false,
                                 value_area: 800

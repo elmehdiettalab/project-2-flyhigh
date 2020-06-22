@@ -1,4 +1,5 @@
 import React, { Component , useState} from 'react'
+import {Link} from 'react-router-dom'
 import '../scss/tabs.scss'; 
 //DatePicker
 import DatePicker from 'react-datepicker'
@@ -33,7 +34,10 @@ const Tabs = () => {
 
                
 
+                <Link to='/searchFlights'>
                 <button className="searchFlights"> Search Flights <img src={next} alt=""/></button>
+
+                </Link>
             </div>
         )
     

@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState , useEffect} from 'react'
 import '../scss/tab.scss'; 
 
 import DatePicker from 'react-datepicker'
@@ -10,9 +10,15 @@ import hotel from '../assets/holiday.png';
 import car from '../assets/taxi.png'; 
 import calendar from '../assets/booking.png'
 import next from '../assets/arrow.png'
+
+
+
+
 const Tab = () => {
     const [Date,setDatePicker] = useState(null); 
     const [Date2,setDatePicker2] = useState(null); 
+
+    
 
     return (
        <div className="tab-1 ">

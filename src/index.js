@@ -5,6 +5,7 @@ import App from './App';
 import Login from './components/Login'
 import Register from './components/Register'
 import Test from './components/Test'
+import SearchFlights from './components/SearchFlights'; 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
@@ -13,6 +14,7 @@ ReactDOM.render(
         <Route exact path="/login" component={Login} />
         <Route exact path="/register" component={Register} />
         <Route exact path="/fb" component={Test} />
+        <Route exact path="/searchFlights" component={SearchFlights} />
       </Switch>
     </Router>
   </React.StrictMode>,
