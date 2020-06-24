@@ -1,17 +1,22 @@
 import React, { Component , useEffect } from 'react';
 import {Link} from 'react-router-dom'
+import { motion } from "framer-motion"
+
 import '../scss/landing.scss';
 import next from '../assets/arrow.png'; 
-export class Landing extends Component {    
-   
-    render() {
+const Landing = () => {    
         return (
             <div className="wrapper">
                 <div className="hero">
-                    <p>Hey Buddy! where are you <br/> 
+                    <motion.p 
+                    
+                    >Hey Buddy! where are you <br/> 
                         <span>Flying</span> to? 
-                    </p>
-                    <button>Explore Now <img src={next} alt=""/></button> 
+                    </motion.p>
+                    <motion.button
+                        whileTap= {{scale: 0.8}}
+                    >Explore Now <img src={next} alt=""/>
+                    </motion.button> 
 
                 </div>
                 <ul className="foot">
@@ -20,7 +25,7 @@ export class Landing extends Component {
                 </ul>
             </div>
         )
-    }
+    
 }
 
 export default Landing

@@ -1,0 +1,152 @@
+@import 'variables'; 
+$side-black : #07031a;  
+$side-yellow : #fbd46d; 
+.page-accordion {
+    width: 300px;
+    height: 100vh;
+    background: $side-black;
+
+    .sidebar-top-acc {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        background: $side-yellow;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        h3 {
+            font-size: 30px;
+            color: $side-black;
+        }
+
+        p {
+            transform: translateX(70px);
+            background: rgba($color: $side-black, $alpha: .6);
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            &:hover {
+                background: rgba($color: $side-black, $alpha: 1);
+               
+            }
+        }
+    }
+
+
+    .accordion {
+        margin-top: 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        li {
+            list-style: none;
+            width: 70%;
+            background: $side-yellow;
+            margin-bottom: 10px;
+            border-radius: 100px;
+            padding: 5px 20px ;
+            text-align: center;
+            a {
+                text-decoration: none;
+                color: $side-black;
+                
+            }
+            &.active {
+                background: white;
+            }
+        }
+
+        .inner {
+            
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            flex-direction: column;
+            width: 70%;
+            text-align: center;
+            
+            
+            a {
+                text-decoration: none;
+                background: rgba($color: $side-yellow, $alpha: .6);
+                color: $side-black;
+                width: 70%;
+                margin-bottom: 10px;
+                border-radius: 100px;
+                transition: .4s ease-in-out;
+                &:hover {
+                    background: $side-yellow;
+                    transform: translateX(-10%);
+                }
+            } 
+            
+           
+            
+        }
+
+        
+    }
+    
+}
+
+.page-accordion.false  {
+    
+    width: 70px;
+    
+    .sidebar-top-acc  {
+
+        h3 {
+            display: none;
+        }
+
+        p {
+            transform: translateX(0px);
+            border-radius: 0;
+        }
+
+    }
+
+    .accordion {
+        li {
+
+            width: 40px;
+            height: 40px;
+            a {
+                position: absolute;
+                transform: translateX(-50%);
+            }
+        }
+    }
+}
+
+
+.content-inner {
+    width: 100%;
+    height: 100vh;
+
+
+    .circle {
+        width: 200px;
+        height: 200px;
+        border-radius: 100px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: $side-yellow;
+        transition: 1s ease-in-out;
+        &:hover {
+            width: 100%; 
+            height: 100vh;
+            position: absolute;
+            border-radius: 0;
+            background: $side-yellow;
+            top: 0;
+            right: 0;
+            left: 0;
+            bottom: 0;
+
+        }
+    }
+}
